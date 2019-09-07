@@ -22,7 +22,14 @@ class VanillaGAN:
 
         self.true_images =  tf.placeholder(dtype=tf.float32, shape=(None, self.image_dim))
 
-        # self.true_images_swith
+        self.true_images_switch = tf.placeholder(dtype=tf.float32, shape=(None,))
+
+        self.discriminator_input = self.true_images_switch * self.true_images +\
+            (1. - self.true_images_switch) * self.generated_images
+
+        self._build_discriminator()
+
+        self._build_loss()
 
     def _build_generator(self):
         return 0
@@ -30,10 +37,16 @@ class VanillaGAN:
     def _build_discriminator(self):
         pass
 
-    def train(self):
+    def _build_loss(self):
         pass
+
+    def train(self):
+        df = DataFeed()
         
 def main():
+    # gan = VanillaGAN()
+    # gan.train()
+
     df = DataFeed()
 
 if __name__ == '__main__':
