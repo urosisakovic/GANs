@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import numpy as np
 from tensorflow.keras.datasets import mnist
 from tensorflow.keras.layers import (BatchNormalization, Dense, Flatten, Input,
