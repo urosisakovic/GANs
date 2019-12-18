@@ -1,5 +1,18 @@
 # GANs
+<p>
+Python modules containing variations of Generative Adversarial Networks.
+</p>
 
-Repo containing where various implementations of GANs will be created (for personal exercise).
+<p>
+In progress. Written for practice.
+</p>
 
-In progress.
+### Implemented variations:
+* Vanilla GAN
+* Progressive GAN
+* Conditional GAN
+* Image-to-Image GAN
+
+### To do:
+* Create base AbstractGAN class from which all other will inherit
+* Create wrapper GAN class which will provide convenient API to all the variations
