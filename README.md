@@ -9,7 +9,7 @@ In progress. Written for practice.
 
 ### Implemented variations:
 * Vanilla GAN
-* Progressive GAN
+* Deep Convolutional GAN
 * Conditional GAN
 * Image-to-Image GAN
 
